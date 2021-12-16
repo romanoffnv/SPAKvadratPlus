@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.priceCalc {
+  width: 100%;
+  background-color: #f3f3f3;
+}
+
+.pCalcWrapper {
+  background-color: #fff;
+  width: 95%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 955px) {
+  .pCalcWrapper {
+    padding: 0 1em;
+  }
+}
+
+@media (max-width: 790px) {
+  .pCalcWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 955px) {
+  .left-group {
+    width: 70%;
+  }
+}
+
+@media (max-width: 790px) {
+  .left-group {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 540px) {
+  .left-group {
+    width: 100%;
+  }
+}
+
+.left-group .pcalcText h3 {
+  margin: 2em auto 1em auto;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+@media (max-width: 1100px) {
+  .left-group .pcalcText h3 {
+    margin-top: 1em;
+  }
+}
+
+@media (max-width: 540px) {
+  .left-group .pcalcText h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 380px) {
+  .left-group .pcalcText h3 {
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+}
+
+.left-group .pcalcText p {
+  font-size: .9em;
+}
+
+@media (max-width: 615px) {
+  .left-group .pcalcText p {
+    display: none;
+  }
+}
+
+.left-group .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4em 0 1em 0;
+}
+
+@media (max-width: 815px) {
+  .left-group .form-group {
+    width: 80%;
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 1em;
+  }
+}
+
+@media (max-width: 790px) {
+  .left-group .form-group {
+    width: 100%;
+    margin: 2em auto;
+  }
+}
+
+.left-group .form-group .dropDown {
+  border: none;
+  border-bottom: 2px solid #555;
+  outline: none;
+  padding: .5em 2em;
+  font-size: 1.2em;
+}
+
+@media (max-width: 955px) {
+  .left-group .form-group .dropDown {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 815px) {
+  .left-group .form-group .dropDown {
+    width: 100%;
+    font-size: 1.5em;
+    padding: .5em 1.5em;
+    border: none;
+  }
+}
+
+@media (max-width: 790px) {
+  .left-group .form-group .dropDown {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 540px) {
+  .left-group .form-group .dropDown {
+    font-size: 1.2em;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 380px) {
+  .left-group .form-group .dropDown {
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+}
+
+.left-group .form-group .dropDown:hover {
+  cursor: pointer;
+}
+
+.left-group .form-group .formButton {
+  padding: .5em 2em;
+  font-size: 1.2em;
+  background-color: #000;
+  color: #fff;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+@media (max-width: 955px) {
+  .left-group .form-group .formButton {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 815px) {
+  .left-group .form-group .formButton {
+    width: 100%;
+    font-size: 1.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+@media (max-width: 540px) {
+  .left-group .form-group .formButton {
+    font-size: 1.2em;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 380px) {
+  .left-group .form-group .formButton {
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+}
+
+.left-group .form-group .formButton:hover {
+  cursor: pointer;
+  background-color: #bdbdbd;
+}
+
+.img-block {
+  width: 30%;
+}
+
+@media (max-width: 1100px) {
+  .img-block {
+    width: 33%;
+  }
+}
+
+@media (max-width: 955px) {
+  .img-block {
+    width: 30%;
+    margin-top: 1.5em;
+  }
+}
+
+@media (max-width: 815px) {
+  .img-block {
+    width: 35%;
+  }
+}
+
+@media (max-width: 790px) {
+  .img-block {
+    width: 80%;
+    margin: 2em auto;
+  }
+}
+
+.img-block img {
+  width: 100%;
+}
+/*# sourceMappingURL=PriceCalc.css.map */

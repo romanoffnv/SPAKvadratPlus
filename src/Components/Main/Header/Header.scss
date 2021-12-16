@@ -1,0 +1,172 @@
+$border: solid red;
+$width1100: 1100px;
+$width1000: 1000px;
+$width900: 900px;
+$tablet: 770px;
+$width720: 720px;
+$width650: 650px;
+$width470: 470px;
+$width360: 360px;
+
+@mixin width1100 {
+    @media (max-width: #{$width1100}) {
+        @content;
+    }
+}
+@mixin width1000 {
+    @media (max-width: #{$width1000}) {
+        @content;
+    }
+}
+@mixin width900 {
+    @media (max-width: #{$width900}) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+}
+@mixin width720 {
+    @media (max-width: #{$width720}) {
+        @content;
+    }
+}
+@mixin width650 {
+    @media (max-width: #{$width650}) {
+        @content;
+    }
+}
+@mixin width470 {
+    @media (max-width: #{$width470}) {
+        @content;
+    }
+}
+@mixin width360 {
+    @media (max-width: #{$width360}) {
+        @content;
+    }
+}
+.header {
+    width: 100%;
+    background-color: #f3f3f3;
+    
+}
+.headerWrapper {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    @include tablet {
+        flex-direction: column;
+        
+    }
+    .heroText{
+        margin: 2em 0;
+        text-align: left;
+        @include tablet {
+            background-color: #fff;
+            padding: 3em 2em;
+        }
+        @include width360 {
+            padding: 3em 1em;
+        }
+        h2 {
+            font-size: 3.5em;
+            font-weight: 300;
+            @include width1100 {
+                font-size: 2.8em;
+            }
+            @include width1000 {
+                font-size: 2.5em;
+            }
+            @include width900 {
+                font-size: 2.1em;
+            }
+            @include tablet {
+                text-align: center;
+                font-size: 3.3em;
+                font-weight: 400;
+                color: orange;
+            }
+            @include width720 {
+                font-size: 3em;
+            }
+            @include width650 {
+                font-size: 2em;
+            }
+            @include width470 {
+                font-size: 1.5em;
+            }
+            @include width360 {
+                font-size: 1.3em;
+                font-weight: 500;
+            }
+            
+        }
+        p {
+            font-size: 1.5em;
+            margin: 1.5em 0;
+            @include tablet {
+                text-align: center;
+            }
+            @include width650 {
+                font-size: 1.1em;
+            }
+            @include width470 {
+                font-size: .8em;
+                font-weight: 500;
+            }
+            @include width360 {
+                width: 100%;
+                font-weight: 500;
+            }
+            
+        }
+        .contactsButton {
+            margin-top: 3em;
+            width: fit-content;
+            padding: 0.5em 2em;
+            font-size: 1.5em;
+            background-color: #000;
+            color: #fff;
+            transition: all 1s;
+            @include tablet {
+                margin: 2em auto;
+            }
+            @include width470 {
+                font-size: 1.2em;
+                
+            }
+        }
+        .contactsButton:hover {
+            cursor: pointer;
+            background-color: rgb(143, 143, 143);
+        }
+
+    }
+    
+    
+    .heroImg {
+        width: 40%;
+        @include width1100 {
+            width: 40%;
+        }
+        @include width1000 {
+            width: 50%;
+        }
+        @include width900 {
+            width: 60%;
+        }
+        @include tablet {
+            width: 80%;
+            margin: 0 auto;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+

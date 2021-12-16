@@ -1,0 +1,208 @@
+$border: solid red;
+$width1100: 1100px;
+$width955: 955px;
+$width815: 815px;
+$tablet: 790px;
+$width615: 615px;
+$width540: 540px;
+$width380: 380px;
+
+@mixin width1100 {
+    @media (max-width: #{$width1100}) {
+        @content;
+    }
+}
+
+@mixin width955 {
+    @media (max-width: #{$width955}) {
+        @content;
+    }
+}
+@mixin width815 {
+    @media (max-width: #{$width815}) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+}
+@mixin width615 {
+    @media (max-width: #{$width615}) {
+        @content;
+    }
+}
+@mixin width540 {
+    @media (max-width: #{$width540}) {
+        @content;
+    }
+}
+@mixin width380 {
+    @media (max-width: #{$width380}) {
+        @content;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.priceCalc{
+    width: 100%;
+    background-color: #f3f3f3;
+}
+.pCalcWrapper {
+    background-color: #fff;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    @include width955 {
+        padding: 0 1em;
+    }
+    @include tablet {
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
+}
+.left-group{
+    @include width955 {
+        width: 70%;
+    }
+    @include tablet {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    @include width540 {
+        width: 100%;
+        
+    }
+    
+    .pcalcText {
+        h3 {
+            margin: 2em auto 1em auto;
+            font-size: 2em;
+            font-weight: 300;
+            @include width1100 {
+                margin-top: 1em;
+            }
+            @include width540 {
+                font-size: 1.5em;
+                font-weight: 400;
+            }
+            @include width380 {
+                font-size: 1.2em;
+                font-weight: 500;
+            }
+        }
+        p {
+            font-size: .9em;
+            @include width615 {
+                display: none;
+            }
+        }
+    }
+    
+    
+    .form-group {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 4em 0 1em 0;
+        @include width815 {
+            width: 80%;
+            padding: 0;
+            flex-direction: column;
+            margin-top: 1em;
+        }
+        @include tablet {
+            width: 100%;
+            margin: 2em auto;
+        }
+        
+        .dropDown {
+            border: none;
+            border-bottom: 2px solid #555 ;
+            outline: none;
+            padding: .5em 2em;
+            font-size: 1.2em;
+            @include width955 {
+                font-size: 1em;
+            }
+            @include width815 {
+                width: 100%;
+                font-size: 1.5em;
+                padding: .5em 1.5em;
+                border: none;
+            }
+            @include tablet {
+                text-align: center;
+                width: 100%;
+                margin: 0 auto;
+            }
+            @include width540 {
+                font-size: 1.2em;
+                font-weight: 400;
+            }
+            @include width380 {
+                font-size: 0.9em;
+                font-weight: 500;
+            }
+        }
+        .dropDown:hover {
+            cursor: pointer;
+        }
+        .formButton {
+            padding: .5em 2em;
+            font-size: 1.2em;
+            background-color: #000;
+            color: #fff;
+            transition: all 1s;
+            @include width955 {
+                font-size: 1em;
+            }
+            @include width815 {
+                width: 100%;
+                font-size: 1.5em;
+                padding-left: 2em;
+                padding-right: 2em;
+            }
+            @include width540 {
+                font-size: 1.2em;
+                font-weight: 400;
+            }
+            @include width380 {
+                font-size: 0.9em;
+                font-weight: 500;
+            }
+        }
+        .formButton:hover {
+            cursor: pointer;
+            background-color: rgb(189, 189, 189);
+        }
+    }
+    
+}
+.img-block {
+    width: 30%;
+    @include width1100 {
+        width: 33%;
+    }
+    @include width955 {
+        width: 30%;
+        margin-top: 1.5em;
+    }
+    @include width815 {
+        width: 35%;
+    }
+    @include tablet {
+        width: 80%;
+        margin: 2em auto;
+    }
+    img {
+        width: 100%;
+    }
+}

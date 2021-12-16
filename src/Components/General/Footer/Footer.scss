@@ -1,0 +1,138 @@
+.footer-container {
+    width: 100%;
+    background-color: #000;
+    font-family: 'Roboto', sans-serif;
+    padding: 2em 0;
+}
+.footerMain {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+}
+.social {
+    width: 100%/4;
+}
+.social p { 
+    text-align: center;
+    margin: 0.6em auto;
+}
+.social a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0.6em auto;
+    color: #999;
+}
+.networks {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    font-size: 2.5em;   
+}
+.networks a {
+    margin-top: 0;
+    color: whitesmoke;
+}
+.fixes {
+    width: 100%/4;
+}
+.services {
+    width: 100%/4;
+}
+.group {
+    width: 100%/4;
+}
+.footerH3 {
+    font-weight: 600;
+    color: rgb(206, 206, 206);
+    margin-top: 0;
+}
+.footerMain ul {
+    padding: 0;
+}
+.footerMain ul li {
+    list-style-type: none;
+    margin: .5em 0;
+}
+.footerMain ul li a {
+    color: #999;
+    text-decoration: none;
+}
+.paywaysH3 {
+    margin-top: 3em;
+    
+}
+.payways {
+    width: 200px;
+    margin-top: .5em;
+    font-size: 2.5em;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
+.copyright {
+    color: #999;
+    text-align: center;
+    font-size: 0.8em;
+    margin: 2em auto 1em auto;
+}
+@media only screen and (max-width: 880px) {
+    .services {
+        display: none;
+    }
+    .copyright {
+        font-size: .9em;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .fixes {
+        display: none;
+    }
+    .copyright {
+        font-size: .8em;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .fixes {
+        display: none;
+    }
+    .copyright {
+        font-size: .8em;
+    }
+    .footerMain {
+        flex-direction: column;
+        align-content: center;
+    }
+    .networks {
+        width: 80%;
+        margin: auto;
+    }
+    .group {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .footerH3 {
+        display: none;
+        text-align: center;
+    }
+    .footerMain ul li {
+        display: none;
+        margin: 1em auto;
+        
+    }
+    .footerMain ul li a {
+        text-decoration: underline;
+    }
+    
+    .payways {
+        margin-top: 1em;
+    }
+}

@@ -1,0 +1,34 @@
+$border: solid red;
+.form-group {
+    width: 100%;
+}
+.dropdown {
+    
+    padding: 1em 0;
+    
+    width: 100%;
+   .ddfield {
+       
+       margin-bottom: 2em;
+       font-size: 1.2em;
+       display: flex;
+       align-items: center;
+   }
+   .ddfield:hover {
+       cursor: pointer;
+   }
+    .dropdown-btn{
+        font-size: 1.2em;
+        width: 100%;
+        border-bottom: 2px solid grey; 
+        
+    }
+    .dropdown-content {
+        font-size: 1.1em;
+        line-height: 2em;
+        margin-bottom: 2em;
+    }
+    .dropdown-content:hover {
+        cursor: pointer;
+    }
+}

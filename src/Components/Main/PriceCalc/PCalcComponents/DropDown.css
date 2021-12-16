@@ -1,0 +1,40 @@
+.form-group {
+  width: 100%;
+}
+
+.dropdown {
+  padding: 1em 0;
+  width: 100%;
+}
+
+.dropdown .ddfield {
+  margin-bottom: 2em;
+  font-size: 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dropdown .ddfield:hover {
+  cursor: pointer;
+}
+
+.dropdown .dropdown-btn {
+  font-size: 1.2em;
+  width: 100%;
+  border-bottom: 2px solid grey;
+}
+
+.dropdown .dropdown-content {
+  font-size: 1.1em;
+  line-height: 2em;
+  margin-bottom: 2em;
+}
+
+.dropdown .dropdown-content:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=DropDown.css.map */

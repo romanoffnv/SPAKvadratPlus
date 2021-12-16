@@ -1,0 +1,160 @@
+$border: solid red;
+$width810: 810px;
+$width590: 590px;
+$width460: 460px;
+$width440: 440px;
+$width370: 370px;
+
+@mixin width810 {
+    @media (max-width: #{$width810}) {
+        @content;
+    }
+}
+@mixin width590 {
+    @media (max-width: #{$width590}) {
+        @content;
+    }
+}
+@mixin width460 {
+    @media (max-width: #{$width460}) {
+        @content;
+    }
+}
+@mixin width440 {
+    @media (max-width: #{$width440}) {
+        @content;
+    }
+}
+@mixin width370 {
+    @media (max-width: #{$width370}) {
+        @content;
+    }
+}
+
+.loginBlock {
+    overflow-y: hidden;
+    height: 0;
+    transition: all 2s;
+    background-color: #F3F3F3;
+    z-index: 5;
+}
+.main {
+    border-radius: 15px;
+    background-color: #88AEB8;
+    color: white;
+    width: 80%;  
+    margin: 0 auto 1em auto;
+    @include width810 {
+        width: 90%;
+    }
+    @include width590 {
+        width: 95%;
+    }
+}
+.entrnanceGroup {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1{
+        font-weight: 300;
+    }
+    .closeButton {
+        color: #F3F3F3;
+        transition: all 1s;
+    }
+    .closeButton:hover {
+        cursor: pointer;
+        opacity: 0.5;
+    }
+}
+.inputsMsgs {
+    width: 80%;
+    margin: 0.5em auto;
+    display: flex;
+    flex-direction: column;
+    @include width460() {
+        width: 90%;
+    }
+    input {
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        padding-left: 0.3em;
+        margin: 1em 0;
+        height: 40px;
+        
+    }
+    .msgField {
+        height: 20px;
+        color: red;
+        font-size: 1em;
+        
+    }
+    .loginButton {
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        outline: none;
+        margin: 2em auto;
+        width: 40%;
+        height: 40px;
+        
+    }
+}
+
+.loggedInGroup {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 1em auto;
+    @include width370() {
+        flex-direction: column;
+        align-items: center;
+    }
+    img {
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        @include width370() {
+            width: 90px;
+            height: 90px;
+            margin-bottom: 2em;
+        }
+    }
+    .greetingLogOut{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 75%;
+        margin-bottom: 1em;
+        @include width370() {
+            
+            width: 100%;
+        }
+        p {
+            text-align: center;
+            font-size: 1.2em;
+            @include width440() {
+                font-size: 1em;
+            }
+            
+        }
+        .logOutButton {
+            border-radius: 5px;
+            width: 40%;
+            margin: 1em auto;
+            text-align: center;
+            padding: .3em;
+            background-color: #5a7d86;
+            transition: all 1s;
+        }
+
+        .logOutButton:hover {
+            cursor: pointer;
+            background-color: #7f9fa8;
+        }
+    }
+}

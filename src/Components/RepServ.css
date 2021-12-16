@@ -1,0 +1,11 @@
+.outerWrapper {
+    margin: 5em 0;
+  }
+  .products__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    width: 80%;
+    margin: 70px auto;
+    gap: 12px;
+  }

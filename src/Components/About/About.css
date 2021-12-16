@@ -1,0 +1,139 @@
+.AboutMain {
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  color: #000;
+}
+
+.AboutMain .contentWrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.AboutMain .contentWrapper h1 {
+  font-size: 3em;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
+@media (max-width: 460px) {
+  .AboutMain .contentWrapper h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 340px) {
+  .AboutMain .contentWrapper h1 {
+    font-size: 2em;
+  }
+}
+
+.AboutMain .contentWrapper .mainBlocks {
+  margin: 5em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 700px) {
+  .AboutMain .contentWrapper .mainBlocks {
+    margin-top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+
+.AboutMain .contentWrapper .mainBlocks .iconBlocks {
+  width: 30%;
+  font-size: 7em;
+  color: orange;
+}
+
+@media (max-width: 700px) {
+  .AboutMain .contentWrapper .mainBlocks .iconBlocks {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0.2em auto;
+    font-size: 10em;
+  }
+}
+
+@media (max-width: 700px) {
+  .AboutMain .contentWrapper .mainBlocks .iconBlocks .whyUsIcon {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.AboutMain .contentWrapper .mainBlocks .textBlocks {
+  width: 60%;
+}
+
+@media (max-width: 700px) {
+  .AboutMain .contentWrapper .mainBlocks .textBlocks {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.AboutMain .contentWrapper .mainBlocks .textBlocks h2 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+@media (max-width: 750px) {
+  .AboutMain .contentWrapper .mainBlocks .textBlocks h2 {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 460px) {
+  .AboutMain .contentWrapper .mainBlocks .textBlocks h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 340px) {
+  .AboutMain .contentWrapper .mainBlocks .textBlocks h2 {
+    font-size: 1.2em;
+  }
+}
+
+.AboutMain .contentWrapper .mainBlocks .textBlocks p {
+  margin: 1em 0;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+@media (max-width: 845px) {
+  .AboutMain .contentWrapper .mainBlocks .textBlocks p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 460px) {
+  .AboutMain .contentWrapper .mainBlocks .textBlocks p {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 340px) {
+  .AboutMain .contentWrapper .mainBlocks .textBlocks p {
+    font-size: 0.8em;
+  }
+}
+/*# sourceMappingURL=About.css.map */
